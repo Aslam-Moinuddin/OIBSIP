@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&family=Splash&family=Tangerine&display=swap');
+body {
+    overflow: visible; 
+}
+.Section{
+    width:100%;
+    height: 100vh;
+    font-family: sans-serif;
+    position: relative;
+}
+#Section1{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(images/MainPage.jpeg);
+    background-size: cover;
+}
+#Section2{
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.1));
+    background-color: rgb(248, 222, 126);
+    background-size: cover;
+}
+#Section3{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.1));
+    background-color: rgb(	255, 192, 203);
+    background-size: cover;
+}
+#Section4{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.1));
+    background-color: rgba(76, 160, 209, 0.199);
+    background-size: cover;
+}
+#Section5{
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(images/end.png);
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Section1 area */
+nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    color: rgb(252, 136, 59);
+    font-family: 'Splash',cursive;
+    font-weight: 400;
+    font-size: 60px;
+    transform: translateX(-20%);
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+.menu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid rgb(252, 136, 59);
+    transition: 0.3s linear;
+}
+.menu a:hover::before{
+    width: 90%;
+}
+.h-text {
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 20%; 
+    transform: translateY(-50%);
+}
+.h-text span{
+    letter-spacing: 5px;
+    color: white;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.h-text p{
+    letter-spacing: 5px;
+    color: white;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height:0.3; 
+}
+.h-text p span{
+    font-size: 30px;
+    font-family: 'Clicker Script', cursive;
+    color: rgb(252, 136, 59);
+    font-weight: 400;
+}
+.h-text a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: rgb(252, 136, 59);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.h-text a:hover{
+    background-color:indianred;
+}
+/* Section2 area */
+.left1{
+    flex-basis: 40%;
+}
+.left1 img{
+    width: 100%;
+    padding-top: 150px;
+    padding-left: 50px;
+}
+.img1{
+    transition: transform 0.3s;
+}
+.img1:hover {
+    transform: scale(1.1);
+}
+.right1{
+    flex-basis: 60%;
+}
+.text1{
+    width: 400px;
+    margin: auto;
+}
+.text1 h2{
+    letter-spacing: 5px;
+    color: white;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text1 h2 span{
+    font-size: 1.5em;
+    font-family: 'Clicker Script',cursive;
+    color: rgb(248, 222, 126);
+    font-weight: 400;
+}
+.text1 p{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text1 p span{
+    font-size: 2em;
+    font-family: 'Clicker Script',cursive;
+    color: rgb(248, 222, 126);
+    font-weight: 400;
+}
+/* Section3 area */
+.right2{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+.right2 img{
+    width: 100%;
+    padding-top: 150px;
+    padding-right: 50px;
+}
+.img2{
+    transition: transform 0.3s;
+}
+.img2:hover {
+    transform: scale(1.1);
+}
+.left2{
+    flex-basis: 60%;
+}
+.text2{
+    width: 400px;
+    margin: auto;
+}
+.text2 h2{
+    letter-spacing: 5px;
+    color: white;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text2 h2 span{
+    font-size: 1.5em;
+    font-family: 'Clicker Script',cursive;
+    color: rgb(255, 192, 203);
+    font-weight: 400;
+}
+.text2 p{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text2 p span{
+    font-size: 2em;
+    font-family: 'Clicker Script',cursive;
+    color: rgb(255, 192, 203);
+    font-weight: 400;
+}
+/* Section4 area */
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.combo{
+    flex-basis: 30%;
+    text-align: center;
+    padding: 20px;
+}
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+h4{
+    color: #dad6d6;
+}
+p {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.lnk {
+    max-width: 650px;
+    width: 100%;
+    position: absolute;
+    bottom: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.lnk a {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.lnk a:hover {
+    background-color: #5e5e5e;
+    border-radius: 8px;
+}
+
+.Space1{
+    background-color:#f5af89;
+    height: 8vh;
+}
+.Space2{
+    background-color:rgb(233, 200, 82);
+    height: 8vh;
+}
+.Space3{
+    background-color:rgb(	255, 192, 203);
+    height: 8vh;
+}
+.Space4{
+    background-color:rgba(76, 160, 209, 0.199);
+    height: 8vh;
+}
+
+/* Section5 area */
+#contact {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+form h2 {
+    text-align: center;
+}
+form label {
+    display: block;
+    font-weight: bold;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #555;
+}
